@@ -1,0 +1,87 @@
+// BASE
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: $white !important;
+    overflow-x: hidden;
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-monument-800;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 52px !important;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 42px !important;
+    line-height: 1.3;
+}
+
+h4 {
+    font-size: 36px;
+    line-height: 1.3;
+}
+
+h5 {
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+h6 {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+p {
+    font-family: $font-family-montserrat;
+    font-size: 16px;
+    font-weight: $font-weight-regular;
+    margin: 0;
+}
+
+@media screen and (max-width: $bp-lg) {
+    h1 { font-size: 56px;}
+    h2 { font-size: 40px !important;}
+    h3 { font-size: 30px !important;}
+    h4 { font-size: 24px !important;}
+}
+
+@media screen and (max-width: $bp-md) {
+    h1 { font-size: 46px;}
+    h2 { font-size: 32px !important;}
+    h3 { font-size: 24px !important;}
+}
+
+@media screen and (max-width: $bp-sm) {
+    h1 { font-size: 28px !important;}
+    h2 { font-size: 24px !important;}
+    h3 { font-size: 20px;}
+    h4 { font-size: 18px;}
+    h5 { font-size: 16px;}
+    h6 { font-size: 14px;}
+}
+
+@media screen and (max-width: $bp-xxs) {
+    h1 { font-size: 24px !important;}
+    h2 { font-size: 22px !important;}
+    h3 { font-size: 18px;}
+    h4 { font-size: 18px;}
+    h5 { font-size: 14px;}
+    h6 { font-size: 12px;}
+}

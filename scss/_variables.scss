@@ -1,0 +1,48 @@
+// VARIABLES
+
+// Colors
+$primary-color: #10292D !default;
+$secondary-color: #164b53 !default;
+$black: #000000 !default;
+$white: #ffffff !default;
+$soft-grey: #dedcdc !default;
+$grey: #CFCDCD !default;
+
+// Typograhy
+@font-face {
+    font-family: 'Monument Extended Black';
+    src: url('../font/MonumentExtended-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Monument Extended Regular';
+    src: url('../font/MonumentExtended-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Monument Extended Light';
+    src: url('../font/MonumentExtended-Light.ttf');
+}
+
+// Font Monument Extended
+$font-family-monument-300: 'Monument Extended Light', sans-serif !default;
+$font-family-monument-400: 'Monument Extended Regular', sans-serif !default;
+$font-family-monument-800: 'Monument Extended Black', sans-serif !default;
+
+// Font Montserrat
+$font-family-montserrat: 'Montserrat', sans-serif !default;
+
+// Font Weight
+$font-weight-bold: 700 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-medium: 500 !default;
+$font-weight-regular: 400 !default;
+$font-weight-light: 300 !default;
+
+// Breakpoints
+$bp-xxs: 375px !default;
+$bp-xs: 575px !default;
+$bp-sm: 768px !default;
+$bp-md: 992px !default;
+$bp-lg: 1200px !default;
+
