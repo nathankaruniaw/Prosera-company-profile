@@ -1,0 +1,51 @@
+.textHeaderMenu{
+    font-size: 10px;
+}
+
+.textHeadline{
+    font-size: 51px;
+}
+
+.textButton{
+    font-size: 11px;
+}
+
+.textBodyText{
+    font-size: 10px;
+}
+
+.textDesc{
+    font-size: 13px;
+}
+
+.textProductHeadline{
+    font-size: 27px;
+}
+
+.textProductButton{
+    font-size: 9px;
+}
+
+.textNewsHeadline{
+    font-size: 21px;
+}
+
+.textDetailText{
+    font-size: 9px;
+}
+
+.textFooterLarge{
+    font-size: 22px;
+}
+
+.textFooterReguler{
+    font-size: 17px;
+}
+
+.textFooterSmall{
+    font-size: 12px;
+}
+
+.textFooter{
+    font-size: 16px;
+}

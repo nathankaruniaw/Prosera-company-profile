@@ -1,0 +1,880 @@
+
+@font-face {
+    font-family: 'Argesta Display';
+    src: url('/assets/argestadisplay-regular-webfont.ttf');
+}
+
+@font-face {
+    font-family: 'Monserrat Light';
+    src: url('/assets/Monserrat/Montserrat-Light.otf');
+}
+
+@font-face {
+    font-family: 'Monserrat Reguler';
+    src: url('/assets/Monserrat/Montserrat-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Monserrat Medium';
+    src: url('/assets/Monserrat/Montserrat-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Monserrat Semibold';
+    src: url('/assets/Monserrat/Montserrat-SemiBold.otf');
+}
+
+@font-face {
+    font-family: 'Monserrat Bold';
+    src: url('/assets/Monserrat/Montserrat-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Monserrat Extra Bold';
+    src: url('/assets/Monserrat/Montserrat-ExtraBold.otf');
+}
+
+:root {
+    --font-argesta: 'Argesta Display';
+    --font-montserrat-light: 'Monserrat Light';
+    --font-montserrat: 'Monserrat Reguler';
+    --font-monstserrat-medium: 'Monserrat Medium';
+}
+
+.textH1{
+    font-size: 80px;
+    font-family: var(--font-argesta);
+    position: relative;
+    color: #002939;
+}
+
+.textH1 span {
+    display: block;
+    color: #002939;
+}
+
+.textH1 .first::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: white;
+    z-index: 1;
+    transform-origin: 100% 0;
+    color: #002939;
+}
+
+.textH1 .second::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: white;
+    z-index: 1;
+    transform-origin: 100% 0;
+    color: #002939;
+}
+
+.textH2{
+    font-size: 54px;
+    font-family: var(--font-montserrat);
+    color: #002939;
+}
+
+.textH3{
+    font-size: 42px;
+    font-family: var(--font-montserrat);
+    color: #002939;
+}
+
+.textH4{
+    font-size: 30px;
+    font-family: var(--font-montserrat);
+    color: #002939;
+}
+
+.textH5{
+    font-size: 24px;
+    font-family: var(--font-montserrat);
+    color: #002939;
+}
+
+.textH6{
+    font-size: 16px;
+    font-family: var(--font-montserrat);
+    color: black;
+}
+
+.textP{
+    font-size: 16px;
+    font-family: var(--font-montserrat);
+    color: #002939;
+}
+
+.textSpanInfo{
+    font-size: 14px;
+    font-family: var(--font-montserrat);
+    color: #002939;
+}
+
+.textButton{
+    font-size: 20px;
+    font-family: var(--font-montserrat);
+    color: #002939;
+}
+
+.textButton1{
+    font-size: 18px;
+    font-family: var(--font-montserrat);
+    color: #002939;
+}
+
+.textNavCarousel{
+    font-size: 2px;
+    font-family: var(--font-montserrat);
+    color: #002939;
+}
+
+.buttonPagination p {
+    margin-bottom: 0;
+    font-size: 20px;
+    color: var(--gold);
+    margin-right: 50px;
+    font-family: var(--font-montserrat-light);
+    letter-spacing: 0.2rem;
+}
+
+#sidenav .menu-list a span {
+    font-family: var(--font-montserrat);
+    font-size: 14px;
+    color: var(--black);
+}
+
+#sidenav {
+    position: fixed;
+    z-index: 40;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    background: var(--white);
+    width: 100%;
+    transform: translateX(720px);
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .35s ease-in-out;
+    margin-top: 75px;
+}
+
+#main-nav ul li a {
+    text-decoration: none;
+    color: var(--black);
+    font-family: var(--font-montserrat);
+    font-size: 16px;
+}
+
+.title-news {
+    font-size: 35px;
+    font-family: var(--font-argesta);
+    color: black;
+    font-weight: 600;
+}
+
+.ctafooter {
+    font-size: 30px;
+    font-family: var(--font-argesta);
+    color: var(--gold);
+    font-weight: 300;
+}
+
+.textAddressFooter{
+    font-size: 16px;
+    font-family: var(--font-montserrat);
+    color: #002939;
+}
+
+.textContactFooter{
+    font-size: 30px;
+    font-family: var(--font-argesta);
+    color: black;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.desc {
+    height: 100%;
+    padding-right: 200px;
+}
+
+.textContactFooterSmall{
+    font-size: 24px;
+    font-family: var(--font-monstserrat-medium);
+    color: #002939;
+}
+
+.textFooter{
+    font-size: 24px;
+    font-family: var(--font-monstserrat-medium);
+    color: #002939;
+}
+
+.textaddress {
+    font-size: 16px;
+    font-family: var(--font-montserrat);
+    color: black;
+}
+
+.textFontBold{
+    font-weight: bold;
+    font-family: var(--font-montserrat);
+    color: #002939;
+}
+
+.textMenuNavbar{
+    font-size: 16px;
+    font-family: var(--font-montserrat);
+    color: #002939;
+}
+
+:root{
+    --gold: #BDB5A8 !important;
+    --grey: #E9EAE4 !important;
+    --black: #000000 !important;
+    --white: #F7F7F7 !important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container-full{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#main-nav {
+    background-color: white;
+    width: 100%;
+    height: 120px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+#main-nav a {
+    text-decoration: none;
+}
+
+#main-nav a .img {
+    width: 100%;
+    height: auto;
+}
+
+ #main-nav ul.menu-list {
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+#main-nav ul.menu-list li {
+    list-style: none;
+    margin-right: 70px;
+    text-decoration: none;
+    width: 100px;
+}
+
+#main-nav ul li a hr {
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+    transition: all .35s ease-in-out;
+}
+
+#main-nav ul li a:hover hr {
+    width: 150%;
+    transition: all .35s ease-in-out;
+}
+
+/* .container-navbar{
+    width: 100%;
+    height: 15vh;
+    padding: 0;
+    margin: 0;
+} */
+
+/* .mainNavbarLogo{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarLogo{
+    width: 80%;
+    height: auto;
+}
+
+.mainNavbar{
+    height: 80%;
+    /* margin-left: 50px; */
+
+.button-standard{
+    text-decoration: none;
+    color: black;
+}
+
+.button-standard:hover{
+    color: black;
+    cursor: pointer;
+}
+
+/* .button-link{
+    border-top: solid black;
+    transition: border 0.6s ease;
+    transform: translateX(0);
+}
+
+.button-link:hover{
+    transform: scaleX(1);
+}
+
+a.fromLeft {
+    transform-origin: 100% 150%;
+} */
+
+#sidenav.sidenav.active {
+    transform: translateX(0px);
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transition: all .35s ease-in-out;
+}
+
+#sidenav .menu-list {
+    padding: 50px 15px;
+}
+
+#sidenav .menu-list a {
+    text-decoration: none;
+}
+
+#sidenav .menu-list a hr {
+    margin: 10px 0;
+    color: var(--black);
+}
+
+#company .content {
+    padding-left: 622px;
+    padding-right: 0px;
+}
+
+#company .content p {
+    font-size: 16px;
+    color: black;
+}
+
+.buttonPagination{
+    background-color: white;
+    width: auto;
+    border: none;
+}
+
+.buttonContainer{
+    padding: 50px 0;
+    height: 100%;
+    width: 100%;
+    padding-right: 150px;
+}
+
+#service {
+    margin: 80px 0;
+}
+
+#client {
+    margin: 80px 0;
+}
+
+.buttonCarousel{
+    width: 130px;
+    height: 50px;
+    padding: 5px 5px 10px;
+    margin: 10px 10px;
+    border-radius: 25px;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.imageButton{
+    width: 5%;
+    height: 20%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageButtonSmall{
+    width: 2%;
+    height: 10%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonLink{
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonLink1{
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.buttonLinkArticles{
+    position: absolute;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.buttonLinkProduct{
+    position: absolute;
+    right: 50px;
+}
+
+.buttonLinkArticles{
+
+}
+
+.buttonLinkArrow{
+    height: 80%;
+    margin-left: 20px;
+}
+
+.buttonLoadNews{
+    width: 300px;
+    padding: 20px 50px;
+    border: 1px solid black;
+    border-radius: 80px;
+    margin-top: 100px;
+}
+
+.textBig{
+    font-size: 70px;
+}
+
+.textReguler{
+    font-size: 40px;
+}
+
+.textSmall{
+    font-size: 20px;
+}
+
+.fotoHeaderSection{
+    width: 100%;
+    height: auto;
+}
+
+.carouselCard{
+    padding: 20px;
+    border: 1px solid black;
+    position: relative;
+    width: 30%;
+    height: 65vh;
+    overflow: hidden;
+}
+
+.carouselCard p {
+    font-size: 10px;
+}
+
+.carouselCard h1 {
+    font-family: var(--font-montserrat-light);
+    font-size: 48px;
+}
+
+.carouselCardImage{
+    width: 70%;
+    height: auto;
+}
+
+.image:hover img{
+    transform: scale(1.5);
+}
+
+#product .textH6 {
+    color: black;
+}
+
+.newsContainer{
+    border-bottom: 1px solid rgb(190, 190, 190);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.newsContainer:hover {
+    border-bottom: 1px solid black;
+    text-decoration: none;
+}
+
+.newsCol p {
+    text-decoration: none;
+}
+
+hr {
+    border-bottom: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 16px;
+}
+
+.newsCol{
+    height: 250px;
+    overflow: hidden;
+}
+
+.newsImage{
+    width: 80%;
+}
+
+.newsPadding{
+    position: relative;
+    padding: 30px;
+}
+
+.newsTop{
+    position: absolute;
+    top: 30px;
+}
+
+.newsBot{
+    position: absolute;
+    bottom: 50px;
+    width: 90%;
+}
+
+.footerPad{
+    padding: 30px 50px 10px;
+}
+
+.address {
+    padding: 0 275px;
+}
+
+#contact .first-row {
+    padding-left: 140px;
+}
+
+/* Product Page */
+.productDetailContainer{
+    padding: 50px 50px 10px 50px;
+    border: 1px solid black;
+    position: relative;
+    height: 100vh;
+}
+
+.productDetail{
+    height: 100vh;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.productDetailCard{
+    height: 50%;
+    border: 1px solid black;
+    padding: 50px 50px 10px 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.productDetailCardImage{
+    height: 40%;
+}
+
+.newsDetailContainer{
+    padding: 50px 200px;
+    border-bottom: 1px solid black;
+}
+
+.buttonRadius{
+    padding: 20px 50px;
+    border: 1px solid black;
+    border-radius: 80px;
+}
+
+.carouselWrapper{
+    width: 100%;
+}
+
+.buttonHover{
+    background: linear-gradient(to bottom, black 50%, white 50%);
+    background-position: bottom;
+    background-size: 100% 200%;
+    transition: all 0.3s ease-out;
+}
+
+.buttonHover:hover{
+    background-position: top;
+    color: white!important;
+}
+
+.arrowButtonSmall{
+    width: 40px;
+    height: 20px;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+.buttonHover:hover .arrowButton{
+    /* -webkit-filter: drop-shadow(white 0 0)!important; */
+    /* filter: drop-shadow(white 0 0)!important; */
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(287deg) brightness(104%) contrast(101%);
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    #main-nav ul.menu-list li {
+        list-style: none;
+        margin-right: 60px;
+        text-decoration: none;
+    }
+}
+
+
+@media only screen and (max-width: 760px) {
+
+
+    #mobile-menu {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 50;
+        background-color: var(--white);
+    }
+
+    #mobile-menu .header img {
+        width: 60%;
+    }
+
+    #mobile-menu .Rightsidebarmenu {
+        float: right;
+    }
+
+    #mobile-menu .Rightsidebarmenu span {
+        font-family: var(--font-montserrat);
+        font-size: 18px;
+        color: var(--black);
+    }
+
+    #main-nav ul.menu-list li {
+        list-style: none;
+        margin-right: 100px;
+        text-decoration: none;
+    }
+
+    .textBig{
+        font-size: 20px;
+    }
+    
+    .textReguler{
+        font-size: 15px;
+    }
+    
+    .textSmall{
+        font-size: 10px;
+    }
+
+    .newsPadding{
+        padding: 20px;
+    }
+
+    .paddingResp{
+        padding: 0 50px;
+    }
+
+    .carouselCard{
+        width: 30%;
+        height: 300px;
+        padding: 10px;
+    }
+
+    .newsContainer{
+        padding: 20px;
+    }
+
+    .footerPad{
+        padding: 30px 20px 10px;
+    }
+
+    .productDetailContainer{
+        height: 80vh;
+        padding: 20px 20px;
+    }
+
+    .productDetail{
+        max-height: 80vh;
+    }
+    
+    .productDetailCard{
+        height: 30vh;
+        padding: 20px 20px;
+        margin: 0;
+    }
+
+    .productDetailCardImage{
+        width: 80%;
+    }
+
+    .hideResponsive{
+        display: none;
+    }
+
+    .buttonLoadNews{
+        width: 250px;
+        padding: 30px 70px;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 760px){
+    .textH1{
+        font-size: 42px;
+    }
+    
+    .textH2{
+        font-size: 35px;
+    }
+    
+    .textH3{
+        font-size: 30px;
+    }
+    
+    .textH4{
+        font-size: 24px;
+    }
+    
+    .textH5{
+        font-size: 18px;
+    }
+    
+    .textH6{
+        font-size: 16px;
+    }
+    
+    .textP{
+        font-size: 14px;
+    }
+    
+    .textSpanInfo{
+        font-size: 12px;
+    }
+    
+    .textButton{
+        font-size: 18px;
+    }
+    
+    .textNavCarousel{
+        font-size: 20px;
+    }
+    
+    .textAddressFooter{
+        font-size: 14px;
+    }
+    
+    .textContactFooter{
+        font-size: 14px;
+    }
+    
+    .textFooter{
+        font-size: 16px;
+    }
+}
+
+/* Phone */
+@media only screen and (max-width: 600px){
+    .textH1{
+        font-size: 30px;
+    }
+    
+    .textH2{
+        font-size: 24px;
+    }
+    
+    .textH3{
+        font-size: 20px;
+    }
+    
+    .textH4{
+        font-size: 18px;
+    }
+    
+    .textH5{
+        font-size: 16px;
+    }
+
+    .textH6{
+        font-size: 14px;
+    }
+    
+    .textP{
+        font-size: 12px;
+    }
+    
+    .textButton{
+        font-size: 18px;
+    }
+    
+    .textNavCarousel{
+        font-size: 18px;
+    }
+    
+    .textAddressFooter{
+        font-size: 12px;
+    }
+    
+    .textContactFooter{
+        font-size: 12px;
+    }
+}

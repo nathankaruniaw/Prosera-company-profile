@@ -1,0 +1,42 @@
+.container-input-foto{
+    height: 50%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.container-input-foto-barang{
+    height: 50vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.foto-barang{
+    height: 100%;
+    width:auto;
+    object-fit: cover;
+    object-ratio: 1/1.3;
+}
+
+.container-foto-barang{
+    height:40vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.buttonDeleteFotoBarang{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.btn-info{
+    background-color: #E0D5BB;
+}
+
+.btn-info:hover{
+    background-color: #E0D5BB;
+}
+
+.btn-info:focus{
+    background-color: #E0D5BB;
+}
